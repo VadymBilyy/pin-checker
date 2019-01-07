@@ -1,0 +1,73 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #39aab2 url("./bgMustache.jpg") no-repeat top;
+}
+
+.appLocked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.appLocked .pinInput {
+  border: 1px solid red;
+}
+
+.pinCheckContainer {
+  width: 320px;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 450px) {
+  .pinCheckContainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.pinContainer {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.pinInput {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.numberButton {
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 30%;
+  margin-bottom: 10px;
+}
